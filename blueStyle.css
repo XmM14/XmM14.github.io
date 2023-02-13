@@ -1,8 +1,16 @@
 body {
-background-color: lightblue;
+    background-color: rgb(220, 255, 220);
+    font-family: 'Lora', serif;
+    font-size: 20px;
 }
 
 h1 {
-color: navy;
+color: #001483;
 margin-left: 20px;
+}
+
+h2 {
+    font-family: 'Droid Sans', serif;
+    color: #031893;
+    margin-left: 25px;
 }
