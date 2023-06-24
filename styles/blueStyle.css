@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #0a172d;
+}
+
+.main .header{
+    height: 100%;
+    /*animation: mymove 20s infinite;*/
+}
+
+/*@keyframes mymove {*/
+/*    from {background-color: #e8dede;}*/
+/*    to {background-color: #eff4fd;}*/
+/*}*/
+
+nav{
+    background-color: #0d2365;
+    display: flex;
+    border-radius: 5px;
+    height: 5%;
+    width: 98%;
+    margin: auto;
+    padding: 20px 5px;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo{
+    margin-left: 5%;
+    border-radius: 5px;
+    height: 60px;
+    width: 150px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #cfeae9;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+
+nav ul li a:active {
+    color: #fff;
+}
+
+.home{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.home h1{
+    font-size: 50px;
+    color: #f8e764;
+    margin-bottom: 20px;
+}
+
+.home h1 span{
+    color: orange;
+
+}
+
+.home p{
+    color: #c0b5b5;
+    font-size: 25px;
+}
+
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images .shape{
+    bottom: 3px;
+}
+
+.images .me {
+    left: 60%;
+}
+
+.images:hover .shape{
+    bottom: 60px;
+}
+
+.images:hover .me{
+    left: 50%;
+}
+
+ .header .social{
+    margin-left: 12%;
+    margin-top: 120px;
+}
+
+.social a{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.header .social a{
+    color: #fde45c;
+}
+
+.social a:hover{
+    color: orange;
+}
+
+
+.divider {
+    height: 3px;
+    background-color: #000;
+    margin-top: 1px;
+    position: relative;
+}
+
+.divider::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #c4cad0;
+}
+
+.description{
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 12%;
+    width: 50%;
+}
+
+.description h1{
+    width: 80%;
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.description h1 span{
+    color: #839be1;
+}
+
+.description p{
+    font-size: 20px;
+    width: 80%;
+    color: #555;
+    line-height: 22px;
+}
+
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    cursor: pointer;
+}
+
+.toggle-text {
+    display: inline-block;
+}
+
+.toggle-checkbox:checked ~ .toggle-content {
+    max-height: 1000px;
+}
+
+.toggle-checkbox:checked ~ .toggle-label .toggle-text {
+    display: none;
+}
+
+.about_image {
+    left: 55%;
+    height: 90%;
+    position: absolute;
+    bottom: -1px;
+    transition: bottom 1s, left 1s;
+}
+
+.about_image:hover{
+    left: 50%;
+}
+
+.description a{
+    background: #494646;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+
+.projects {
+    background-color: #f3e0e1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.project_header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.project_header span {
+    color: darkblue;
+}
+
+.project_1,
+.project_2 {
+    width: 50%;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.project_1 .common_head, .project_2 .common_head {
+    color: #0d2365;
+}
+.project_1 .common_p, .project_2 .common_p {
+    color: #497500;
+}
+
+.project_1 header,
+.project_2 header {
+    font-style: oblique;
+    margin-top: 150px;
+}
+
+.project_1 img,
+.project_2 img {
+    width: 80%;
+    margin-bottom: 10px;
+    margin-right: 85px;
+}
+
+#project2_toggle .toggle-text {
+    color: #212121;
+}
+
+
+footer {
+    background-color: #b0b0b0;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy-rights {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.foot .social {
+    color: #212121;
+    margin-top: 20px;
+    margin-left: 8%;
+    transform: translateX(-50%);
+}
+
+
+
+
