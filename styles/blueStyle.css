@@ -14,13 +14,7 @@
 
 .main .header{
     height: 100%;
-    /*animation: mymove 20s infinite;*/
 }
-
-/*@keyframes mymove {*/
-/*    from {background-color: #e8dede;}*/
-/*    to {background-color: #eff4fd;}*/
-/*}*/
 
 nav{
     background-color: #0d2365;
@@ -120,7 +114,7 @@ nav ul li a:active {
     left: 50%;
 }
 
- .header .social{
+.header .social{
     margin-left: 12%;
     margin-top: 120px;
 }
@@ -146,24 +140,11 @@ nav ul li a:active {
     position: relative;
 }
 
-.divider::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 20px;
-    height: 20px;
-    background-color: #000;
-    border-radius: 50%;
-}
-
-
 .about {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #c4cad0;
+    background-color: #050911;
 }
 
 .description{
@@ -176,18 +157,18 @@ nav ul li a:active {
 .description h1{
     width: 80%;
     font-size: 50px;
-    color: #212121;
+    color: #839be1;
     margin-bottom: 20px;
 }
 
 .description h1 span{
-    color: #839be1;
+    color: #27ceca;
 }
 
 .description p{
     font-size: 20px;
     width: 80%;
-    color: #555;
+    color: #b4afaf;
     line-height: 22px;
 }
 
@@ -208,6 +189,7 @@ nav ul li a:active {
 
 .toggle-text {
     display: inline-block;
+    color: #a1d0d0;
 }
 
 .toggle-checkbox:checked ~ .toggle-content {
@@ -243,7 +225,7 @@ nav ul li a:active {
 
 
 .projects {
-    background-color: #f3e0e1;
+    background-color: #191b1f;
     position: relative;
     display: flex;
     justify-content: center;
@@ -260,7 +242,7 @@ nav ul li a:active {
 }
 
 .project_header span {
-    color: darkblue;
+    color: #c7d0ec;
 }
 
 .project_1,
@@ -271,10 +253,23 @@ nav ul li a:active {
 }
 
 .project_1 .common_head, .project_2 .common_head {
-    color: #0d2365;
+    color: #9baee5;
 }
 .project_1 .common_p, .project_2 .common_p {
-    color: #497500;
+    color: #f6fcf5;
+}
+
+.projects .features{
+    color: white;
+}
+
+.projects .fab{
+    color: #7ee7e4;
+}
+
+.projects .toggle-text {
+    display: inline-block;
+    color: #7ee7e4;
 }
 
 .project_1 header,
@@ -289,11 +284,6 @@ nav ul li a:active {
     margin-bottom: 10px;
     margin-right: 85px;
 }
-
-#project2_toggle .toggle-text {
-    color: #212121;
-}
-
 
 footer {
     background-color: #b0b0b0;
